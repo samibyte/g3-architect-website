@@ -1,0 +1,120 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts imported from google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* shared styles */
+
+  /* dark 01*/
+  .dark-grey {
+    color: #131313;
+  }
+  /* dark 02 */
+  .grey {
+    color: #424242;
+  }
+  /* dark 03 */
+  .light-grey {
+    color: #727272;
+  }
+  /* dark 04 */
+  .lighter-grey {
+    color: #A1A1A1;
+  }
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.btn-primary {
+  background-color: #FF900E;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+/* header styles */
+.navbar, .banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* nav styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.14rem;
+}
+
+/* banner styles */
+.banner-text {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.banner-subtitle {
+  margin-bottom: 30px;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-menu{
+    flex-direction: column;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+}
