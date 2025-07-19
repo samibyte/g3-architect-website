@@ -150,6 +150,17 @@ header {
   margin-bottom: 30px;
 }
 
+/* feature section styles */
+.feature-section {
+  display: flex;
+  align-items: center;
+}
+
+.feature-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
 /* facts section */
 .facts-title {
   font-size: 3rem;
@@ -215,6 +226,19 @@ header {
   filter: grayscale(100%);
 }
 
+/* footer styles */
+
+.footer-container {
+  width: 70%;
+  margin: 0 auto 130px;
+  background-color: #FFF4E7;;
+}
+.footer-text {
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 0;
+}
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
   /* header responsive styles */
@@ -231,13 +255,27 @@ header {
     flex-direction: column;
   }
 
+  .navbar {
+    margin: 0;
+  }
+  .brand {
+    margin-bottom: 50px;
+  }
+  .nav-item {
+    margin-bottom: 30px;
+  }
+  .nav-link {
+    font-size: 30px;
+  }
+
   .banner-text {
     width: 100%;
   }
 
   .team-img,
   .facts-card,
-  .sponsor-subtitle
+  .sponsor-subtitle, 
+  .footer-container
   {
     width: 100%;
   }
@@ -245,11 +283,27 @@ header {
   .facts-card-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    text-align: center;
+    margin: 0 auto 50px;
   }
 
+
   .sponsor-logo-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto 130px;
+  }
+
+  .sponsor-logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer-container {
     margin: 0;
+  }
+  .footer-text {
+    font-size: .75rem;
   }
 }
